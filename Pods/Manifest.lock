@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.7.3)
+  - JGProgressHUD (2.0.3)
+  - RxAlamofire (4.2.0):
+    - RxAlamofire/Core (= 4.2.0)
+  - RxAlamofire/Core (4.2.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxSwift (4.2.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - JGProgressHUD
+  - RxAlamofire
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - JGProgressHUD
+    - RxAlamofire
+    - RxSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: d6624d7aea0aa05bf7423b5df322eb5d57685e08
+
+COCOAPODS: 1.5.3
