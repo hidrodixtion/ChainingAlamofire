@@ -10,6 +10,7 @@ import UIKit
 import RxAlamofire
 import RxSwift
 import SwiftyJSON
+import JGProgressHUD
 
 class ViewController: UIViewController {
 
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
     }
     
     private func getData() {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading"
+        hud.show(in: self.view)
+        
         var selectedTeam = ""
         _ = json(.get, "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League")
             .flatMap({ data -> Observable<Any> in
@@ -51,6 +56,7 @@ class ViewController: UIViewController {
                     print(self.players)
                     self.tableView.reloadData()
                 }
+                hud.dismiss()
         }
     }
     
